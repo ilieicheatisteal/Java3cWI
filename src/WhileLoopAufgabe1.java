@@ -9,8 +9,10 @@ public class WhileLoopAufgabe1 {
             int randomNumber = random.nextInt(10, 31);
             System.out.println(randomNumber);
 
-            if () {
+            if ((randomNumber == 15) || (randomNumber == 25)) {
+            isFinished = true;
 
+            System.out.println("Finished");
             }
          }
     }
