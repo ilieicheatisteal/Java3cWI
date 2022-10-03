@@ -1,4 +1,5 @@
 import java.util.Scanner;
+
 public class bankomataufgabe {
     public static void main(String[] args) {
         boolean isFinished = false;
