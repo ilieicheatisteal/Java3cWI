@@ -17,7 +17,7 @@ public class wuerfelspiel {
 
             int selection = scanner.nextInt();
             if (rolls == 0) {
-                System.out.println("Das Spiel endet "+ playerwins + " zu " + botwins + "!");
+                System.out.println("Das Spiel endet " + playerwins + " zu " + botwins + "!");
                 isFinished = true;
             }
             if (selection == 1) {
@@ -30,33 +30,24 @@ public class wuerfelspiel {
                 if (randomNumber > randomNumberBOT) {
                     playerwins = playerwins + 1;
                     System.out.println("Diese Runde hast du gewonnen!");
-                    if (randomNumberBOT > randomNumber) {
-                        botwins = botwins + 1;
-                        System.out.println("Diese Runde hast du verloren!");
-                        if (randomNumberBOT == randomNumber) {
-                            botwins = botwins + 1;
-                            playerwins = playerwins + 1;
-                            System.out.println("Unentschieden!");
-                            if (rolls == 0) {
-                                System.out.println("Das Spiel endet " + playerwins + " zu" + botwins);
-                                isFinished = true;
-                            }
-                        }
-                    }
-                } else if (randomNumberBOT > randomNumber) {
-                    System.out.println("Diese Runde hast du verloren!");
-
-                } else if (randomNumberBOT == randomNumber) {
-                    System.out.println("Unentschieden!");
                 }
-            }
-            if (selection == 2) {
-                System.out.println("Du startest mit 6 wurfen. Wenn der Computer eine Höhere Zahl als du Würfelt, verlierst du. Wenn du eine Höhere Zahl Würfelst, gewinnst du.");
-            }
-            if (selection == 3) {
-                System.out.println("Game Over.");
-                isFinished = true;
+                if (randomNumberBOT > randomNumber) {
+                    botwins = botwins + 1;
+                    System.out.println("Diese Runde hast du verloren!");
+                }
+                if (randomNumberBOT == randomNumber) {
+                    botwins = botwins + 1;
+                    playerwins = playerwins + 1;
+                    System.out.println("Unentschieden!");
+                    if (rolls == 0) {
+                        System.out.println("Das Spiel endet " + playerwins + " zu" + botwins);
+                        isFinished = true;
+                    }
+                }
+
+
             }
         }
+        System.out.println("test");
     }
 }
