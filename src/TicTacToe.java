@@ -10,7 +10,7 @@ public class TicTacToe {
         int[][] playGround = new int[3][3];
 
         playGround[0][0] = 1;
-        playGround[2][1] = 2;
+        playGround[2][1] = 9;
         System.out.println("-------------");
         for (int row = 0; row < playGround.length; row++) {
             for (int col = 0; col < playGround.length; col++) {
