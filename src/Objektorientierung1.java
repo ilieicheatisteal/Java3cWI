@@ -1,21 +1,41 @@
+import objects.car;
+
 public class Objektorientierung1 {
     public static void main(String[] args) {
         int a = 7;
-        String name = "hans";
 
-        String[] names = {"hans", "sepp", "paul"};
+        car c1 = new car();
+        c1.brand = "Audi";
+        c1.fuelConsumption = 7;
+        c1.serialNumber = "A1234";
+        c1.fuelAmount = 70;
+        c1.totalFuel = 90;
+        c1.amountOfRepetitions = 3;
+        c1.color = "blue";
+        c1.horsePower = 200;
 
-        int carFuelConsumption = 7;
-        String car1Brand = "Audi";
-        String car2SerialNumber = "A1234";
+        car c2 = new car();
+        c2.brand = "Mercedes";
+        c2.fuelConsumption = 6;
+        c2.serialNumber = "M1234";
+        c2.fuelAmount = 20;
+        c2.totalFuel = 35;
+        c2.amountOfRepetitions = 5;
+        c2.color = "red";
+        c2.horsePower = 300;
 
-        int car2FuelConsumption = 5;
-        String car2Brand = "Audi";
-        String car2SerialNum = "A1236";
+        System.out.println(c2.fuelAmount);
+        c2.drive();
+        System.out.println(c2.fuelAmount);
+        c1.drive();
+        c1.drive();
+        c1.drive();
+        c1.drive();
+        c1.turboBoost();
 
-        String[] cars = {"7; Audi; A1234", "5;Audi;A1235"};
-        String[] car1 = cars[0].split(";");
-
-
+        c2.honk(1);
+        c1.honk(4);
+        c1.getRemainingRange();
+        c2.getRemainingRange();
     }
 }
