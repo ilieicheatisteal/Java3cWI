@@ -11,6 +11,12 @@ public class car {
     public String color;
     public int horsePower;
 
+    public car(int fc, String b, String s){
+        this.fuelConsumption = fc;
+        this.brand = b;
+        this.serialNumber = s;
+    }
+
     public void turboBoost(){
        if(fuelAmount> totalFuel*0.1)
            System.out.println("SuperBoostMode");
