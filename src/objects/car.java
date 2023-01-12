@@ -11,10 +11,16 @@ public class car {
     public String color;
     public int horsePower;
 
-    public car(int fc, String b, String s){
+    public String Engine;
+
+    public car(String engine, int fc, String b, String s, int hp, String c, int honk){
         this.fuelConsumption = fc;
         this.brand = b;
         this.serialNumber = s;
+        this.horsePower = hp;
+        this.color = c;
+        this.amountOfRepetitions = honk;
+        this.Engine = engine;
     }
 
     public void turboBoost(){
@@ -37,6 +43,73 @@ public class car {
     public void getRemainingRange() {
         System.out.println(fuelAmount / fuelConsumption);
     }
+
+    public void setTank (int tank){
+        fuelAmount = tank;
+    }
+    public void setBrand(String brand){
+        this.brand = brand;
+    }
+
+    public void setColor(String color){
+        this.color = color;
+    }
+    public void setFuelAmount(int fuelAmount){
+        this.fuelAmount = fuelAmount;
+    }
+
+    public void setFuelConsumption(int fuelConsumption) {
+        this.fuelConsumption = fuelConsumption;
+    }
+
+    public void setTotalFuel(int totalFuel) {
+        this.totalFuel = totalFuel;
+    }
+
+    public void setSerialNumber(String serialNumber) {
+        this.serialNumber = serialNumber;
+    }
+
+    public void setHorsePower(int horsePower) {
+        this.horsePower = horsePower;
+    }
+
+    public int getHorsePower() {
+        return horsePower;
+    }
+
+    public int getFuelAmount() {
+        return fuelAmount;
+    }
+
+    public int getFuelConsumption() {
+        return fuelConsumption;
+    }
+
+    public int getTotalFuel() {
+        return totalFuel;
+    }
+
+    public String getBrand() {
+        return brand;
+    }
+
+    public String getColor() {
+        return color;
+    }
+
+    public String getSerialNumber() {
+        return serialNumber;
+    }
+
+    public String getEngine(){
+        return Engine;
+    }
+
+    public void setEngine(String engine) {
+        this.Engine = engine;
+    }
+
 
 
 }

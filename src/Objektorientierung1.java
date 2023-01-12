@@ -24,7 +24,7 @@ public class Objektorientierung1 {
         c2.color = "red";
         c2.horsePower = 300;
 */
-        car c3 = new car(17,"Opel","1234");
+        car c3 = new car("LS",3,"Nissan", "1951",400, "yellow",5);
 
         System.out.println(c3.serialNumber);
 
