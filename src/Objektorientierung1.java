@@ -1,4 +1,4 @@
-import objects.car;
+import objects.Car;
 
 public class Objektorientierung1 {
     public static void main(String[] args) {

@@ -1,6 +1,6 @@
 import java.util.Random;
 
-public class switchaufgabe {
+public class Switchaufgabe {
     public static void main(String[] args) {
         Random random = new Random();
         int randomNumber = random.nextInt(5, 11);

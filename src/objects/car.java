@@ -1,6 +1,6 @@
 package objects;
 
-public class car {
+public class Car {
     public int totalFuel;
 
     public int amountOfRepetitions;

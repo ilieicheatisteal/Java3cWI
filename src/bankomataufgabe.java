@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class bankomataufgabe {
+public class Bankomataufgabe {
     public static void main(String[] args) {
         boolean isFinished = false;
         int balance = 0;

@@ -1,4 +1,4 @@
-public class caesarTask {
+public class CaesarTask {
     public static void main(String[] args) {
         String result = encrypt(2, "a");
     }
