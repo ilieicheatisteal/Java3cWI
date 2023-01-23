@@ -13,7 +13,7 @@ public class Car {
 
     public String Engine;
 
-    public car(String engine, int fc, String b, String s, int hp, String c, int honk){
+    public Car(String engine, int fc, String b, String s, int hp, String c, int honk){
         this.fuelConsumption = fc;
         this.brand = b;
         this.serialNumber = s;
