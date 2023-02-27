@@ -1,6 +1,6 @@
 package objects;
 
-public class Engine {
+public class 9Engine {
     private enum TYPE {DIESEL, GAS}
 
     private int horsePower;
