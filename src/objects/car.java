@@ -1,5 +1,7 @@
 package objects;
 
+import java.util.List;
+
 public class Car {
     public int totalFuel;
 
@@ -13,6 +15,9 @@ public class Car {
 
     public String Engine;
 
+    private List<RearMirror> mirrors;
+
+    private List<Tires> tires;
     public Car(String engine, int fc, String b, String s, int hp, String c, int honk){
         this.fuelConsumption = fc;
         this.brand = b;
@@ -22,6 +27,10 @@ public class Car {
         this.amountOfRepetitions = honk;
         this.Engine = engine;
     }
+public void addMirror(RearMirror rearMirror){
+        this.mirrors.add(rearMirror);
+}
+
 
     public void turboBoost(){
        if(fuelAmount> totalFuel*0.1)
