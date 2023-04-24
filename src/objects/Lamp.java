@@ -13,7 +13,7 @@ public class Lamp {
     }
 
     public void turnOff(){
-        System.out.println("Kein Verbraucher angeschlossen");
+        System.out.println("Kein Verbraucher angeschlossen!");
     }
 
     public void turnAllOn(){
